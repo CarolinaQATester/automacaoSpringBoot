@@ -3,7 +3,7 @@ package com.automacao.springboot.automacaospringboot.model;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.io.Serializable;
+
 
 @Data
 @Entity
