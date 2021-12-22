@@ -1,11 +1,11 @@
 package com.automacao.springboot.automacaospringboot.dto;
 
 import lombok.Data;
-import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.Length;
-import org.hibernate.validator.constraints.NotBlank;
 
-import javax.persistence.Column;
+
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 
 @Data
 public class UserDTO {
@@ -15,7 +15,7 @@ public class UserDTO {
     @Length(min=3, max=50, message = "O nome deve conter entre 3 e 50 caracteres")
     private String name;
     @NotBlank(message = "{email.not.blank}")
-    @Email(message = "{email.not.valid}")
+    @Email(message = "Email invalido")
     private String email;
     @NotBlank(message = "{password.not.blank}")
     private String password;
