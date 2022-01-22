@@ -1,0 +1,10 @@
+.gradle
+.idea
+.vscode
+gradlew.bat
+gradlew
+HELP.md
+settings.gradle
+gradle
+bin
+build
